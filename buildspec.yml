@@ -8,7 +8,7 @@ phases:
       - IMAGE_NAME=MyWebAppRepo
       - REGION=<region>
       # Fill in ECS information
-      - CONTAINER_NAME=MyWebAppContainer # TaskDefinition: container definition name (Wrapper for imageUri)
+      - CONTAINER_NAME= # TaskDefinit891377347851.dkr.ecr.eu-west-1.amazonaws.com/mywebapploadbalancerion: container definition name (Wrapper for imageUri)
       # -----------------------
       - IMAGE=$REGISTRY_URI/$IMAGE_NAME
       - COMMIT=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-8)
