@@ -4,11 +4,11 @@ phases:
   pre_build:
     commands:
       # Fill in ECR information
-      - REGISTRY_URI=<registry uri>
-      - IMAGE_NAME=MyWebAppRepo
+      - REGISTRY_URI=891377347851.dkr.ecr.eu-west-1.amazonaws.com/mywebapploadbalancer
+      - IMAGE_NAME=mywebapploadbalancer
       - REGION=<region>
       # Fill in ECS information
-      - CONTAINER_NAME= # TaskDefinit891377347851.dkr.ecr.eu-west-1.amazonaws.com/mywebapploadbalancerion: container definition name (Wrapper for imageUri)
+      - CONTAINER_NAME=MyWebAppContainer # TaskDefinition: container definition name (Wrapper for imageUri)
       # -----------------------
       - IMAGE=$REGISTRY_URI/$IMAGE_NAME
       - COMMIT=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-8)
