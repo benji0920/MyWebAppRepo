@@ -5,7 +5,7 @@ phases:
     commands:
       # Fill in ECR information
       - REGISTRY_URI=<registry uri>
-      - IMAGE_NAME=<image name>
+      - IMAGE_NAME=MyWebAppRepo
       - REGION=<region>
       # Fill in ECS information
       - CONTAINER_NAME=MyWebAppContainer # TaskDefinition: container definition name (Wrapper for imageUri)
